@@ -14,13 +14,11 @@ settings.configure(
 	MIDDLEWARE_CLASSES = (
 	    'django.middleware.common.CommonMiddleware',
 	    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-        'django.middleware.clickjacking.XFrameOptionsMiddleware',
 	),
 )
 
 from django.conf.urls import url
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
 
 def index(request):
 	return HttpResponse("Hey see this! It's working.")
